@@ -49,7 +49,6 @@ const Hero = () => {
                 </button>
                 <button 
                   onClick={handleAboutUs}
-                  onClick={handleAboutUs}
                   className="px-8 py-4 bg-white text-gray-700 font-semibold border-2 border-gray-300 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200"
                 >
                   About us
