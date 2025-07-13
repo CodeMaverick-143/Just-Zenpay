@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Layout from './Layout';
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <Layout>
+      <div className="min-h-screen bg-gray-50">
       {/* Navigation Bar */}
       <nav className="px-6 py-4 lg:px-12">
         <div className="max-w-7xl mx-auto">
@@ -124,7 +126,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

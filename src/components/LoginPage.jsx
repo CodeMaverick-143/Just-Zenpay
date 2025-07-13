@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import Layout from './Layout';
 
 const LoginPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,7 +16,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <Layout>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       {/* Back Button */}
       <button
         onClick={handleBackToHome}
@@ -170,7 +172,8 @@ const LoginPage = () => {
           </div>
         )}
       </div>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

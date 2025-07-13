@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Layout from './Layout';
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <Layout>
+      <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
       <nav className="px-6 py-4 lg:px-12">
         <div className="max-w-4xl mx-auto">
@@ -129,7 +131,8 @@ const AboutUs = () => {
 
         </div>
       </div>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
