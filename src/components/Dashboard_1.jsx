@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { LogOut, User, CreditCard, FileText, Settings } from 'lucide-react';
+import { LogOut, History, CreditCard, FileText, Settings } from 'lucide-react';
 import Layout from './Layout';
 
 const Dashboard = () => {
@@ -74,15 +74,15 @@ const Dashboard = () => {
                 <p className="text-gray-600 text-sm">Track and manage your payments</p>
               </div>
 
-              {/* Client Management */}
+              {/* History */}
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200 cursor-pointer">
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="p-2 bg-blue-100 rounded-lg">
-                    <User className="w-6 h-6 text-blue-600" />
+                    <History className="w-6 h-6 text-blue-600" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900">Clients</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">History</h3>
                 </div>
-                <p className="text-gray-600 text-sm">Manage your client information</p>
+                <p className="text-gray-600 text-sm">View your previous invoices and transactions</p>
               </div>
 
               {/* Settings */}
@@ -96,27 +96,6 @@ const Dashboard = () => {
                 <p className="text-gray-600 text-sm">Configure your account preferences</p>
               </div>
 
-            </div>
-
-            {/* Recent Activity */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Recent Activity</h3>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between py-3 border-b border-gray-100">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-900">Welcome to Zenpay!</span>
-                  </div>
-                  <span className="text-gray-500 text-sm">Just now</span>
-                </div>
-                <div className="flex items-center justify-between py-3 border-b border-gray-100">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-gray-900">Account created successfully</span>
-                  </div>
-                  <span className="text-gray-500 text-sm">Today</span>
-                </div>
-              </div>
             </div>
 
           </div>
