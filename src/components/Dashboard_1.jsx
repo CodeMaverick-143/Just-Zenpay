@@ -82,7 +82,7 @@ const Dashboard = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">History</h3>
                 </div>
-                <p className="text-gray-600 text-sm">View your previous invoices and transactions</p>
+                <p className="text-gray-600 text-sm">View your previous invoices</p>
               </div>
 
               {/* Settings */}
